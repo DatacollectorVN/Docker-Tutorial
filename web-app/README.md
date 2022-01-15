@@ -2,7 +2,7 @@
 
 This tutorial used [FastAPI](https://fastapi.tiangolo.com/)
 
-## FOR SETUP 
+## FOR setup 
 ### 1. Setup enviroment
 
 ```bash
