@@ -2,7 +2,7 @@
 
 This tutorial used [FastAPI](https://fastapi.tiangolo.com/)
 
-## FOR setup 
+## For setup 
 ### 1. Setup enviroment
 
 ```bash
@@ -23,7 +23,7 @@ pip install "uvicorn[standard]"
 pip freeze > requirements.txt
 ```
 
-## FOR running Docker
+## For running Docker
 
 ### 1. Build Images from Dockerfile
 
