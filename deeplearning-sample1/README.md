@@ -4,7 +4,7 @@ This repository from [click-here](https://github.com/abhishekkrthakur/bert-senti
 
 I follow the tutorial from [here](https://www.youtube.com/watch?v=0qG_0CPQhpg) for learning how to create Dockerfile for data science project.
 
-## Record-1
+## Experiment-1
 **Searching Docker hub:**
 
 ![plot](src-imgs/figure_1.png)
@@ -31,7 +31,7 @@ htop
 ```
 *If it's works, mean you create successfully.*
 
-## Record-2: Create python environment.
+## Experiment-1: Create python environment.
 
 **Dockerfile:**
 
