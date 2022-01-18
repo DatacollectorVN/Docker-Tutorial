@@ -4,6 +4,12 @@ This repository from [click-here](https://github.com/abhishekkrthakur/bert-senti
 
 I follow the tutorial from [here](https://www.youtube.com/watch?v=0qG_0CPQhpg) for learning how to create Dockerfile for data science project.
 
+## Setup data
+```bash
+python download_data.py
+```
+*Ouput:* train.csv in this project.
+
 ## Ex1
 **Searching Docker hub:**
 
@@ -80,7 +86,7 @@ cd src
 ls
 ```
 
-**Start training data**
+**Start training data:**
 
 Start training when run Docker container
 
@@ -116,7 +122,7 @@ MODEL_PATH = "/root/docker_data/model.bin"
 
 TRAINING_FILE = "/root/docker_data/train.csv"
 
-**Move train.csv**
+**Move train.csv:**
 ```bash
 mv train.csv ../docker_data
 ```
@@ -156,7 +162,7 @@ That's mean when Docker Container create some new files that will save in your l
 docker run -v /home/kosnhan/Projects-Python/Docker-Tutorial/docker_data/:/root/docker_data -it docker_tutorial /bin/bash -c "cd src/ && source activate ml && python train.py"
 ```
 
-## Ex4: Docker Container with CUDA version.
+## Ex5: Docker Container with CUDA version.
 
 **Verify CUDA Version inside container:**
 ```bash
