@@ -1,0 +1,24 @@
+IMG_DIR: "../../../../mnt/data_lab513/ntnhan/CHEST-XRAY/5-classes/imgs"
+ANNOTATION_STANDARD_ADD_FILE : "../../../../mnt/data_lab513/ntnhan/CHEST-XRAY/5-classes/chest_xray_positive_wbf.csv"
+ANNOTATION_TRAIN_JSON_FILE : "../../../../mnt/data_lab513/ntnhan/CHEST-XRAY/5-classes/chest_xray_positive_wbf_train.json"
+ANNOTATION_VAL_JSON_FILE : "../../../../mnt/data_lab513/ntnhan/CHEST-XRAY/5-classes/chest_xray_positive_wbf_val.json"
+CLASSES_NAME : ["Aortic enlargement", "Cardiomegaly", "ILD", "Infiltration", "Nodule/Mass"]
+NUM_CLASSES : 5
+COLOR : [[59, 238, 119], [206, 221, 133], [0, 0, 255], [211, 176, 166], [102, 65, 77]]
+MODEL : "COCO-Detection/retinanet_R_50_FPN_3x.yaml"
+TRANSFER_LEARNING : "best_model_map50.pth"
+NAME_REGISTER : "chestxray_"
+RANDOM_FLIP : "none"
+OUTPUT_DIR : "./snapshots"
+SCORE_THR_VAL : 0.05
+SCORE_THR : 0.5
+NMS_THR_VAL : 0.5
+NMS_THR : 0.5
+ROI_HEADS_IOU_THRESHOLDS : 0.5
+RETINANET_IOU_THRESHOLDS : [0.4, 0.5]
+NUM_WORKERS : 4
+IMS_PER_BATCH : 1
+BATCH_SIZE_PER_IMAGE : 512
+DEVICE: "cpu"
+CHECK_TRAIN: True
+CHECK_VAL : False
