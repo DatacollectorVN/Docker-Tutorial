@@ -16,4 +16,4 @@ docker-compose up
 
 + 4. deeplearning-sample1 ([ref](https://www.youtube.com/watch?v=0qG_0CPQhpg))
 
-+ 5. deeplearning-sample2 (my [project](https://github.com/DatacollectorVN/Chest-Xray-Version2)
++ 5. deeplearning-sample2 (my [project](https://github.com/DatacollectorVN/Chest-Xray-Version2))
