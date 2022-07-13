@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  some_service:
+    image: someimage
+    environment:
+      - VARIABLE
+
+  another_service:
+    image: anotherimage
+    environment:
+      - VARIABLE
+      - ANOTHER_VARIABLE

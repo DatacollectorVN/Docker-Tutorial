@@ -1,0 +1,16 @@
+version: '3.4'
+
+x-common-variables: &common-variables
+  VARIABLE: some_value
+  ANOTHER_VARIABLE: another_value
+
+services:
+  some_service:
+    image: someimage
+    environment: *common-variables
+
+  another_service:
+    image: anotherimage
+    environment:
+      <<: *common-variables
+      NON_COMMON_VARIABLE: 'non_common_value'

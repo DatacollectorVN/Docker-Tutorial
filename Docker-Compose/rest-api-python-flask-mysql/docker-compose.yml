@@ -1,0 +1,18 @@
+version: "3"
+services:
+  app:
+    build: ./app
+    links:
+      - db
+    ports:
+      - "5001:5000"
+
+  db:
+    image: mysql:latest
+    command: --default-authentication-plugin=caching_sha2_password
+    ports:
+      - "32000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/:ro

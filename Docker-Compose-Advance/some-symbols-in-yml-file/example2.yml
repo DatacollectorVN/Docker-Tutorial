@@ -1,0 +1,8 @@
+foo: &myanchor
+  key1: "val1"
+  key2: "val2"
+
+bar:
+  << : *myanchor
+  key2: "val2-new"
+  key3: "val3"

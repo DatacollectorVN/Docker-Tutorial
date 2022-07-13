@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  some_service:
+    image: someimage
+    env_file:
+      - 'variables.env'
+
+  another_service:
+    image: anotherimage
+    env_file:
+      - 'variables.env'

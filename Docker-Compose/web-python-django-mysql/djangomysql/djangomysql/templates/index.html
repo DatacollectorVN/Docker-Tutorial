@@ -1,0 +1,22 @@
+{% if user_list %}
+    <table border="1" cellpadding="2" cellspacing="2">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Address</th>
+		</tr>
+		{% for user in user_list %}
+			<tr>
+				<td>{{user.id}}</td>
+				<td>{{user.name}}</td>
+				<td>{{user.email}}</td>
+				<td>{{user.phone}}</td>
+				<td>{{user.address}}</td>
+			</tr>
+		{% endfor %}
+    </table>
+{% else %}
+    <p>No user record available</p>
+{% endif %}
